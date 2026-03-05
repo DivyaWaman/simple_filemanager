@@ -1,0 +1,16 @@
+The Node.js File System (fs) module allows you to work with files and directories on your system. It is a built-in module, so you don’t need to install it with npm.
+The fs (File System) module in Node.js provides methods to:
+
+Create files
+
+Read files
+
+Update files
+
+Delete files
+
+Rename files
+
+Work with directories
+
+It helps Node.js applications interact with the file system of the operating system.

@@ -1,0 +1,12 @@
+Git is a distributed version control system.
+
+It helps developers track changes in code and collaborate with teams.
+
+Common Git commands:
+git init
+git add
+git commit
+git push
+git pull
+
+Platforms like GitHub allow developers to store and manage repositories online.

@@ -24,7 +24,7 @@
                 <% files.forEach(function(file) { %>
                     <div class="task w-72 px-3 py-1 rounded-md bg-zinc-800">
                         <h1 class="text-white text-3xl tracking-tighter">
-                            <%= file.replace('.txt', '' ) %>
+                            <%= file.replace('.txt', '' ).split(" ").slice(0,3).join(" ")  %>
                         </h1>
                         <div class=" mt-1 flex justify-between items-center">
                             <a class="text-blue-500 hover:underline inline-block" href="/file/<%= file %>">Read

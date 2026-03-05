@@ -1,0 +1,9 @@
+JavaScript supports asynchronous programming.
+
+Common ways to handle async operations:
+
+1. Callbacks
+2. Promises
+3. Async/Await
+
+Async programming allows tasks like API calls and file reading to run without blocking the main thread.

@@ -1,0 +1,11 @@
+Express is a popular web framework for Node.js.
+
+It helps developers build web applications and APIs easily.
+
+Main features:
+- Routing
+- Middleware support
+- Template engines like EJS
+- REST API development
+
+Express is lightweight and flexible, making it one of the most widely used Node.js frameworks.

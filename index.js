@@ -17,12 +17,12 @@ app.get("/", function (req, res) {
 
 app.get("/file/:filename", function (req, res) {
     fs.readFile(`./files/${req.params.filename}`, 'utf-8', function (err, data) {
-        res.render("show", { title: req.params.filename, fileData: data });
+        res.render("show", { title: path.parse(req.params.filename).name, fileData: data });
     });
 });
 
 app.post("/create", function (req, res) {
-    fs.writeFile(`./files/${req.body.title.split(' ').join('')}.txt`, req.body.detail, function (err) {
+    fs.writeFile(`./files/${req.body.title}.txt`, req.body.detail, function (err) {
         if (err) throw err;
         res.redirect("/");
     });
@@ -35,7 +35,7 @@ app.get("/edit/:filename", function (req, res) {
 app.post("/edit", function (req, res) {
     console.log(req.body);
     const oldPath = `./files/${req.body.previous}`;
-    const newPath = `./files/${req.body.new.split(' ').join('')}.txt`;
+    const newPath = `./files/${req.body.new}.txt`;
     fs.access(oldPath, fs.constants.F_OK, function (err) {
         if (err) {
             return res.status(404).send("File not found");
